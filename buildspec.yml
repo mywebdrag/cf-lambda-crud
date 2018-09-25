@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket mywewbdrag-api 
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket mywebdrag-api 
                                    --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
