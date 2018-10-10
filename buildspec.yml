@@ -7,16 +7,12 @@ phases:
         --template-file samTemplate.yaml 
         --s3-bucket mywebdrag-api 
         --output-template-file outputSamTemplate.yaml
-      # - aws cloudformation deploy 
-      #   --template-file /home/ec2-user/environment/cf-lambda-crud/outputTemplate.yaml 
-      #   --stack-name my-new-stack-deploy
-      #   --capabilities CAPABILITY_IAM
       - aws cloudformation deploy 
-        --template-file /home/ec2-user/environment/cf-lambda-crud/outputSamTemplate.yaml 
-        --stack-name MY-STACK --capabilities CAPABILITY_IAM
+        --template-file outputSamTemplate.yaml
+        --stack-name my-new-stack-deploy
+        --capabilities CAPABILITY_IAM
 artifacts:
   type: zip
   files:
     - samTemplate.yaml
     - outputSamTemplate.yaml
-npm
