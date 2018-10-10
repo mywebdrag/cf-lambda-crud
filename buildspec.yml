@@ -12,7 +12,7 @@ phases:
       #   --stack-name my-new-stack-deploy
       #   --capabilities CAPABILITY_IAM
       - aws cloudformation deploy 
-        --template-file /home/ec2-user/environment/cf-lambda-crud/outputTemplate.yaml 
+        --template-file /home/ec2-user/environment/cf-lambda-crud/outputSamTemplate.yaml 
         --stack-name MY-STACK --capabilities CAPABILITY_IAM
 artifacts:
   type: zip
