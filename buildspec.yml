@@ -9,5 +9,4 @@
       #   --capabilities CAPABILITY_IAM
       - aws cloudformation deploy 
         --template-file /home/ec2-user/environment/cf-lambda-crud/outputTemplate.yaml 
-        --stack-name MY-STACK -
-        -capabilities CAPABILITY_IAM
+        --stack-name MY-STACK --capabilities CAPABILITY_IAM
